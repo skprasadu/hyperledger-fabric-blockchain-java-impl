@@ -1,6 +1,6 @@
 # Hyperledger Fabric Java Reference Implementation
 
-This is a reference implentation of Java based Chaincode and Java SDK to query the chaincode. This is based on Fabcar implementation. However the Fabcar implementation has some bugs and it will not run out of the box. We need to do some tweaking to make it work, hence there was a need for a proper reference implementation and hence, this project. There is a definite cost benefit of Java support for Hyperledger Fabric.
+This is a reference implentation of Java based Chaincode and Java SDK to query the chaincode. This can be used for extending Hyperledger Fabric for Java based web development using Spring Boot. This is based on Fabcar implementation from fabric-samples. There was a need for a proper reference implementation of java based chaincode development environment, hence this project. There is a definite cost benefit of Java support for Hyperledger Fabric.
 
 Just to give some background, Hyperledger Fabric is GOLANG based and most of the chaincode examples works out of the box with GOLANG, some of them also works with Node and Javascript. But this is no proper reference of completely Java based Chaincode development environment and this project addresses that. 
 
