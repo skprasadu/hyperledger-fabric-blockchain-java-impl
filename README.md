@@ -8,8 +8,8 @@ I feel that Hyperledger Fabric and Java is a perfect recipe for enterprise Block
 
 Reference implementation is based on [fabric-samples](https://github.com/hyperledger/fabric-samples), below is the steps to setup java development environment.
 
-* git clone https://github.com/skprasadu/hyperledger-fabric-blockchain-java-impl.git to your machine
-* git clone https://github.com/hyperledger/fabric-samples to your machine. This has been tested with Mac or Ubuntu 16.04 
+* `git clone https://github.com/skprasadu/hyperledger-fabric-blockchain-java-impl.git` to your machine
+* `git clone https://github.com/hyperledger/fabric-samples` to your machine. This has been tested with Mac or Ubuntu 16.04 
 * go to ./chaincode folder under fabric-samples folder and create a new folder called java-chaincode under that create a folder called Java
 * copy the content of java-chaincode folder from hyperledger-fabric-blockchain-java-impl from step 1 to Java folder above 
 * go back to fabric-samples folder and create a new folder called java-chaincode folder and copy the startFabric.sh file into the root of java-chaincode 
