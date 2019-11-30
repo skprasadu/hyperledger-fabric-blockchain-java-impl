@@ -8,7 +8,7 @@ The tutorial is based on JavaScript, however the same concepts are applicable wh
 To install and instantiate the Java version of `FabCar`, use the following command instead of the command shown in the [Launch the network](https://hyperledger-fabric.readthedocs.io/en/release-1.4/write_first_app.html#launch-the-network) section of the tutorial:
 
 ```
-./startFabric.sh javascript
+./startFabric.sh java
 ```
 
 *NOTE:* After navigating to the documentation, choose the documentation version that matches your version of Fabric
