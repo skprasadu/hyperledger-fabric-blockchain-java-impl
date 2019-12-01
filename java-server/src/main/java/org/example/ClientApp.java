@@ -41,15 +41,23 @@ public class ClientApp {
 			result = contract.evaluateTransaction("queryAllCars");
 			System.out.println(new String(result));
 
-			contract.submitTransaction("createCar", "CAR10", "VW", "Polo", "Grey", "Mary");
+			for (int i = 10; i < 10000; i++) {
+				String key = String.format("CAR%03d", i);
+				try {
+					contract.submitTransaction("createCar", key, "VW", "Polo", "Grey", "Mary");
+					result = contract.evaluateTransaction("queryCar", key);
+					System.out.println(new String(result));
 
-			result = contract.evaluateTransaction("queryCar", "CAR10");
-			System.out.println(new String(result));
+					contract.submitTransaction("changeCarOwner", key, "Archie");
 
-			contract.submitTransaction("changeCarOwner", "CAR10", "Archie");
+					result = contract.evaluateTransaction("queryCar", key);
+					System.out.println(new String(result));
+					break;
+				} catch (Exception ex) {
 
-			result = contract.evaluateTransaction("queryCar", "CAR10");
-			System.out.println(new String(result));
+				}
+
+			}
 		}
 	}
 
