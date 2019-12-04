@@ -6,6 +6,8 @@ Just to give some background, Hyperledger Fabric is GOLANG based and most of the
 
 I feel that Hyperledger Fabric and Java is a perfect recipe for enterprise Blockchain development and yet there is so less material around this, and I wanted to fulfil this.
 
+If you are in a hurry you can run `sh testJavaFabric.sh`, it will deploy the chaincode into hyperledger ecosystem and run the `mvn test` to run the java sdk test to communicate with java chaincode. Details is as below.
+
 Reference implementation is based on [fabric-samples](https://github.com/hyperledger/fabric-samples), below is the steps to setup java development environment.
 
 * `git clone https://github.com/skprasadu/hyperledger-fabric-blockchain-java-impl.git` to your machine
